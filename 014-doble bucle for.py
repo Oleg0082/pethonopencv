@@ -18,7 +18,8 @@ for _ in range(0,20):
             (centrox,centroy), 
             radio, 
             (rojo,verde,azul), 
-            4)
+            4,
+            lineType=cv2.LINE_AA)
     cv2.imwrite("imagenes/"+str(time.time())+'.png', imagen_blanca)
 # creo una ventana
 ##cv2.namedWindow('Mi ventana', cv2.WINDOW_NORMAL)
